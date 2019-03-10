@@ -1,0 +1,127 @@
+@charset "utf-8";
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dt,dd{
+    /* 默认有边距，都要清除 */
+    margin: 0;
+    padding: 0;
+    /*字体设置*/
+    font-family:  "Open Sans","Microsoft Yahei", 微软雅黑, Arial, sans-serif;
+    /* 去掉列表的原点 */
+    list-style: none;
+    /* 默认鼠标 */
+    cursor: default;
+    /*设置字体抗锯齿属性，让文字更细腻*/
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+p,h1,h2,h3,h4,h5,h6 {
+    font-size: 14px;
+    text-align: justify;
+    cursor: text;
+    vertical-align: bottom;
+}
+hr {
+    height: 1px;
+    background-color: #eee;
+    border: none;
+}
+body{
+    min-width: 1280px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ 
+/*行内块元素*/
+input,img{
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    outline-style: none;
+    vertical-align: bottom; 
+}
+ 
+/*行内元素*/
+a,
+a:active,
+a:visited,
+a:hover {
+    /*下划线和颜色*/
+    text-decoration: none;
+    cursor: pointer;
+}
+ 
+textarea{
+    /* 边框清零 */
+    border:none;
+    /* 轮廓线清零 */
+    outline: none;
+    /* 防止文本域被随意拖拽 */
+    resize: none;
+}
+ 
+i{
+    /*文字样式*/
+    font-style: normal; 
+}
+ 
+table{
+    /*边框合并*/
+    border-collapse:collapse;
+    border-spacing:0;
+}
+ 
+ 
+/* 使用伪元素清除浮动 */
+.clearfix::before,
+.clearfix::after{
+    content:"";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: none;
+    clear: both;
+}
+ 
+.clearfix {
+    *zoom: 1;
+}
+ 
+/* 版心*/
+.w{
+    width: 1200px;
+    margin: 0 auto;
+}
+.text_center {
+    text-align: center !important;
+}
+/*该项目中常用6种颜色*/
+.las {
+    /*常用蓝色*/
+    background: #5998fb !important;
+}
+.chs {
+    /*常用橙色*/
+    background: #fa8c44 !important;
+}
+.fns {
+    /*常用粉色*/
+    background: #e53aaf !important;
+}
+.lvs {
+    /*常用绿色*/
+    background: #3dc983 !important;
+}
+.zis {
+    /*常用紫色*/
+    background: #ab3de1 !important;
+}
+.hos {
+    /*常用红色*/
+    background: #c94345 !important;
+}
+/*切换标签tab公共属性*/
+.tab {
+    cursor: pointer;
+}

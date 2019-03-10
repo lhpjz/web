@@ -1,0 +1,400 @@
+@charset "utf-8";
+/*-------------------------------------------index_header 头部-------------------------------------------*/
+.index_header {
+	width: 100%;
+	height: 78px;
+	line-height: 78px;
+	color: #fff;
+	background: #343b43;
+	position: fixed;
+	top: 0;
+	z-index: 999999;
+}
+/*--------------------------------logo--------------------------------*/
+.index_header h2.logo{
+	width: 127px;
+	height: 100%;
+	display: block;
+	float: left;
+	margin-right: 50px;
+}
+.index_header h2.logo p {
+	display: none;
+}
+.index_header h2 a{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.index_header h2 img{
+	width: 127px;
+	height: 24px;
+	margin-bottom: 27px;
+}
+/*--------------------------------header_nav 导航--------------------------------*/
+.index_header .header_nav{
+	height: 100%;
+	float: left;
+	position: relative;
+}
+.index_header .header_nav .navbar li.nav_item{
+	height: 100%;
+	float: left;
+	position: relative;
+}
+.index_header .header_nav .navbar li.nav_item a.nav_link {
+	color: inherit;
+	line-height: 76px;
+	padding: 0 20px;
+	display: block;
+	border-top: 2px solid #333;
+}
+.index_header .header_nav .navbar li.nav_item a.nav_link:hover {
+	border-top: 2px solid #fff;
+}
+/*-----------------------dropdown_menu 下拉菜单-----------------------*/
+.index_header .header_nav .dropdown_menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 999;
+	display: none;
+}
+.index_header .header_nav li.nav_item:hover .dropdown_menu {
+	display: block;
+}
+/*------------------menu 二级菜单------------------*/
+.index_header .dropdown_menu ul.menu {
+	background: #fff;
+	font-size: 14px;
+	color: #333;
+}
+.index_header .dropdown_menu li.menu_item {
+	width: 200px;
+	height: 42px;
+	line-height: 42px;
+	border-bottom: 1px solid #f5f5f5;
+	border-left: 1px solid #f5f5f5;
+	padding: 0 20px;
+}
+.index_header .dropdown_menu li.menu_item a.menu_link {
+	display: block;
+	font-size: inherit;
+	color: inherit;
+}
+.index_header .dropdown_menu li.menu_item:hover {
+	color: #c80f1f;
+}
+/*--------------has-children 三级菜单--------------*/
+.index_header .dropdown_menu li.has-children {
+	position: relative;
+}
+.index_header .dropdown_menu li.has-children ul.menu {
+	position: absolute;
+	top: 0;
+	right: -200px;
+	display: none;
+}
+.index_header .dropdown_menu li.has-children:hover ul.menu {
+	display: block;
+}
+/*--------------------------------header_search 搜索--------------------------------*/
+.index_header .header_search {
+	width: 300px;
+	height: 30px;
+	border-radius: 15px;
+	float: right;
+	position: relative;
+	top: 24px;
+	left: 0;
+}
+/*文本*/
+.index_header .header_search .search_text {
+	width: 100%;
+	line-height: 30px;
+	border-radius: inherit;
+	padding-left: 16px;
+	box-shadow: 1px 2px 5px 2px #ccc inset;
+	position: absolute;
+	top: 0;
+}
+/*按钮*/
+.index_header .header_search .search_btn {
+	width: 50px;
+	height: 30px;
+	display: block;
+	padding: 0 14px;
+	color: #fff;
+	font-size: 24px;
+	/*padding-right: 4px;*/
+	background: #ca0814;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	border-radius: 0 15px 15px 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	box-shadow: -3px -4px 2px 3px #b40510 inset;
+}
+
+/*-------------------------------------------footer 底部内容区域-------------------------------------------*/
+.foot {
+	width: 100%;
+	height: 316px;
+	background: #343b43;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 99999;
+}
+.foot .foot-item {
+	width: 100%;
+	background: inherit;
+	color: #fff;
+}
+.foot .foot-item .content1 {
+	width: 400px;
+	line-height: 36px;
+	position: relative;
+	margin: 0 auto;
+	padding-left: 10px;
+}
+.foot .foot-item .content1 span {
+	color: #999;
+	font-size: 12px;
+}
+.foot .foot-item .content1 .wechat {
+	width: 98px;
+	height: 98px;
+	position: absolute;
+	top: 10px;
+	right: 30px;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+}
+.foot .foot-item .content1 h5 {
+	position: absolute;
+	top: 108px;
+	right: 46px;
+	color: #999;
+	font-weight: normal;
+}
+.foot .foot-item .content2 {
+	height: 316px;
+	background: #30363d;
+	padding: 45px 100px;
+}
+.foot .foot-item .content2 .flexs {
+	display: flex;
+	width: 250px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+.foot .foot-item .content2 .flexs .flex-item {
+	width: 78px;
+	height: 78px;
+	margin-bottom: 8px;
+}
+.foot .foot-item .content2 .flexs .flex-item a {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: relative;
+}
+/*a标签上面覆盖一层透明背景*/
+.foot .foot-item .content2 .flexs .flex-item a::before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: linear-gradient(to right, #1584e3 0%, #3287fa 20%, #0071d2 100%);
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	/*transition: property duration timing-function delay;*/
+	/*transition: 过渡效果名称（none/all/property） 完成过渡效果所需时间 速度曲线 什么时候开始;*/
+	transition: opacity .5s ease .2s;
+}
+.foot .foot-item .content2 .flexs .flex-item:hover a::before {
+	opacity: 0.7;
+}
+.foot .foot-item .content2 .flexs .flex-item a::after {
+	color: #333;
+	font-size: 14px;
+	padding-top: 8px;
+	text-align: center;
+	content: '\e66b';
+	width: 30px;
+	height: 30px;
+	display: block;
+	z-index: 2;
+	background: #fff;
+	border-radius: 15px;
+	position: absolute;
+	top: 30%;
+	left: 30%;
+	opacity: 0;
+	transition: all .5s ease .2s;
+	transform: scale(.2);
+}
+.foot .foot-item .content2 .flexs .flex-item:hover a::after {
+	opacity: 1;
+	transform: scale(1);
+}
+.foot .foot-item .content2 button {
+	width: 250px;
+	height: 44px;
+	margin-top: 10px;
+	display: block;
+	outline: none;
+	cursor: pointer;
+	border: none;
+	color: #fff;
+	font-size: 16px;
+	background: linear-gradient(to right, #1584e3 0%, #3287fa 20%, #0071d2 100%);
+}
+.foot .foot-item .content2 button.icon-case:before {
+	margin-right: 10px;
+}
+.foot .foot-item .content3 {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	line-height: 30px;
+}
+.foot .foot-item .content3 p {
+	color: #999;
+	font-size: 12px;
+}
+.foot .foot-item .content3 form {
+	width: 350px;
+	color: #999;
+	font-size: 12px;
+}
+.foot .foot-item .content3 form input {
+	padding-left: 10px;
+	color: #fff;
+	width: 300px;
+	height: 30px;
+	background: #30363d;
+	margin-top: 10px;
+}
+.foot .foot-item .content3 .submit {
+	width: 120px;
+	height: 30px;
+	border: 1px solid #343b43;
+	outline: none;
+	color: #fff;
+	background: #343b43;
+	margin-top: 20px;
+	cursor: pointer;
+}
+.foot .foot-item .content3 .submit:hover {
+	background: linear-gradient(to right, #1584e3 0%, #3287fa 20%, #0071d2 100%);
+}
+
+/*-------------------------------------------kefu 客服内容-------------------------------------------*/
+.kefu {
+	width: 58px;
+	position: absolute;
+	top: 30%;
+	right: 10px;
+	z-index: 9999;
+}
+.kefu .go-top,
+.kefu .qq {
+	width: 58px;
+	height: 58px;
+	margin-bottom: 2px;
+	background: rgba(102,102,102,.7);
+	font-size: 12px;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+}
+/*图标*/
+.kefu .icon-huojian:before,
+.kefu .icon-qq:before {
+	font-size: 28px;
+}
+/*文字*/
+.kefu .icon-qq:after {
+	content: '在线客服';
+	font-size: 12px;
+}
+.kefu .icon-huojian:after {
+	content: '返回顶部';
+	font-size: 12px;
+}
+/*触发背景颜色*/
+.kefu .go-top:hover,
+.kefu .qq:hover {
+	background: linear-gradient(to right, #1584e3 0%, #3287fa 20%, #0071d2 100%);
+}
+/*触发展开样式*/
+.kefu .qq-item {
+	width: 150px;
+	min-height: 300px;
+	position: absolute;
+	top: 0;
+	right: 58px;
+	background: #fff;
+	box-shadow: 0 10px 30px -10px rgba(64,64,64,0.15);
+	display: none;
+}
+.kefu .qq:hover .qq-item {
+	display: block;
+}
+.kefu .qq-item dt {
+	text-align: center;
+	padding-top: 8px;
+	font-size: 18px;
+	line-height: 30px;
+	width: 100%;
+	height: 80px;
+	background: linear-gradient(to right, #1584e3 0%, #3287fa 20%, #0071d2 100%);
+}
+.kefu .qq-item dd {
+	width: 100%;
+	border-bottom: 1px solid #eee;
+}
+.kefu .qq-item dd a {
+	width: 100%;
+	height: 60px;
+	display: block;
+	color: #666;
+	font-size: 16px;
+	margin-bottom: 5px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0 10px;
+}
+.kefu .qq-item dd a:hover {
+	color: #0082e6;
+}
+.kefu .qq-item .hot-line {
+	width: 100%;
+	padding-top: 15px;
+	color: #0082e6;
+}
+.kefu .qq-item .hot-line h5 {
+	font-size: 16px;
+	color: #666;
+	text-align: center;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+.kefu .qq-item .hot-line p {
+	font-size: 18px;
+	text-align: center;
+}
